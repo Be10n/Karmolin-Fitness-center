@@ -1,0 +1,21 @@
+﻿<Page x:Class="Karmolin_Fitness_Center_.Pages.SubscriptionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Karmolin_Fitness_Center_.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SubscriptionPage">
+
+    <Grid>
+        <DataGrid Name="DgridSubscriptions" Margin="5">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding IdSubscription}" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding NameSubscription}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Price}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding NumberOfDays}" Width="auto"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

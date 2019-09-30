@@ -1,0 +1,26 @@
+﻿<Page x:Class="Karmolin_Fitness_Center_.Pages.AdminPages.AdminMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Karmolin_Fitness_Center_.Pages.AdminPages"
+      xmlns:props ="clr-namespace:Karmolin_Fitness_Center_.Properties"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AdminMenu">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="375"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{x:Static props:Resources.TextAdmin}" Style="{StaticResource CommonBlock}" 
+                   HorizontalAlignment="Center" Width="Auto" FontSize="24"></TextBlock>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Name="ButtonTest" Content="Юзеры" Background="#FFDC253A" Click="ButtonTest_Click"></Button>
+            <Button Name="ButtonSale" Content="Продажа абонемента" Background="#FFDC253A" Click="ButtonSale_Click"></Button>
+            <Button Name="ButtonAttendance"  Content="Посещения" Background="#FFDC253A" Click="ButtonAttendance_Click"></Button>
+            <Button Name="ButtonSubscriptions" Content="Абонементы" Background="#FFDC253A" Click="ButtonSubscriptions_Click" ></Button>
+        </StackPanel>
+    </Grid>
+</Page>
