@@ -17,10 +17,10 @@
         <TextBlock Text="{x:Static props:Resources.TextAdmin}" Style="{StaticResource CommonBlock}" 
                    HorizontalAlignment="Center" Width="Auto" FontSize="24"></TextBlock>
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Name="ButtonTest" Content="Юзеры" Background="#FFDC253A" Click="ButtonTest_Click"></Button>
-            <Button Name="ButtonSale" Content="Продажа абонемента" Background="#FFDC253A" Click="ButtonSale_Click"></Button>
-            <Button Name="ButtonAttendance"  Content="Посещения" Background="#FFDC253A" Click="ButtonAttendance_Click"></Button>
-            <Button Name="ButtonSubscriptions" Content="Абонементы" Background="#FFDC253A" Click="ButtonSubscriptions_Click" ></Button>
+            <Button Name="ButtonTest" Content="{x:Static props:Resources.ActionUser}" Background="#FFDC253A" Click="ButtonTest_Click"></Button>
+            <Button Name="ButtonSale" Content="{x:Static props:Resources.ActionSale}" Background="#FFDC253A" Click="ButtonSale_Click"></Button>
+            <Button Name="ButtonAttendance"  Content="{x:Static props:Resources.ActionAttendance}" Background="#FFDC253A" Click="ButtonAttendance_Click"></Button>
+            <Button Name="ButtonSubscriptions" Content="{x:Static props:Resources.ActionSubscription}" Background="#FFDC253A" Click="ButtonSubscriptions_Click" ></Button>
         </StackPanel>
     </Grid>
 </Page>

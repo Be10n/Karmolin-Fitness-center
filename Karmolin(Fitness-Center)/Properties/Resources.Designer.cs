@@ -70,11 +70,47 @@ namespace Karmolin_Fitness_Center_.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Attendance.
+        /// </summary>
+        public static string ActionAttendance {
+            get {
+                return ResourceManager.GetString("ActionAttendance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Login.
         /// </summary>
         public static string ActionLogin {
             get {
                 return ResourceManager.GetString("ActionLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sale subscription.
+        /// </summary>
+        public static string ActionSale {
+            get {
+                return ResourceManager.GetString("ActionSale", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subscriptions.
+        /// </summary>
+        public static string ActionSubscription {
+            get {
+                return ResourceManager.GetString("ActionSubscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Users.
+        /// </summary>
+        public static string ActionUser {
+            get {
+                return ResourceManager.GetString("ActionUser", resourceCulture);
             }
         }
         
