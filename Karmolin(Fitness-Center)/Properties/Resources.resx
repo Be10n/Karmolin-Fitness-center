@@ -144,6 +144,9 @@
   <data name="TextAdmin" xml:space="preserve">
     <value>Hello Admin!</value>
   </data>
+  <data name="TextAnswer" xml:space="preserve">
+    <value>Answer:</value>
+  </data>
   <data name="TextChooseLanguage" xml:space="preserve">
     <value>Choose the language:</value>
   </data>

@@ -19,6 +19,11 @@
                 <TextBlock Text="{x:Static props:Resources.TextPassword}" Style="{StaticResource CommonBlock}"></TextBlock>
                 <PasswordBox x:Name="PasswordBoxPassword"></PasswordBox>
             </StackPanel>
+            <TextBlock Text="Сколько будет 1+1?" MouseDown="BlockQuestion_MouseDown" Width="auto" HorizontalAlignment="Center" Name="BlockQuestion" Style="{StaticResource CommonBlock}"></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{x:Static props:Resources.TextAnswer}" Style="{StaticResource CommonBlock}"></TextBlock>
+                <TextBox Name="TextBoxAnswer"></TextBox>
+            </StackPanel>
             <Button Content="{x:Static props:Resources.ActionLogin}" HorizontalAlignment="Right" Name="ButtonLogin"
                     Click="ButtonLogin_Click" Background="#FFE31616"></Button>
         </StackPanel>

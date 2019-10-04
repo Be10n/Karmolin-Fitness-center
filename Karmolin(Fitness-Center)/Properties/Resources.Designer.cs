@@ -142,6 +142,15 @@ namespace Karmolin_Fitness_Center_.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Answer:.
+        /// </summary>
+        public static string TextAnswer {
+            get {
+                return ResourceManager.GetString("TextAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Choose the language:.
         /// </summary>
         public static string TextChooseLanguage {

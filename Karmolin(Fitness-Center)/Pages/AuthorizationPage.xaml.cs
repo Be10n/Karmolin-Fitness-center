@@ -21,10 +21,36 @@ namespace Karmolin_Fitness_Center_.Pages
     /// </summary>
     public partial class AutarizationPage : Page
     {
+        private Random _random = new Random();
         private int _triesCount = 0;
         private DispatcherTimer _blockTimer = new DispatcherTimer();
         private DateTime _startDate = new DateTime();
+        private int _answer;
+
+        private string[] _numders = new string[] { "ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять" };
+        private string[] _operations = new string[] { "плюс", "минус" };
         public AutarizationPage()
+
+        {
+            GenerateQuestion();
+
+            var firstNumber = _random.Next(0, 10);
+            var secondNumber = _random.Next(0, 10);
+            var operationIndex = _random.Next(0, _operations.Length);
+            switch(operationIndex)
+            {
+                case 0:
+                    _answer = firstNumber + secondNumber;
+                    break;
+                case 1:
+                    _answer = firstNumber - secondNumber;
+                    break;
+            }
+            BlockQuestion.Text = $"Сколько будет{_numders[firstNumber]}"+ $"{_operations[operationIndex]}{_numders[secondNumber]}?";
+            _answer = firstNumber + secondNumber;
+        }
+
+        private void GenerateQuestion()
         {
             InitializeComponent();
             _blockTimer.Interval = TimeSpan.FromSeconds(1);
@@ -48,6 +74,17 @@ namespace Karmolin_Fitness_Center_.Pages
 
         private void ButtonLogin_Click(object sender, RoutedEventArgs e)
         {
+            if(Convert.ToInt32(TextBoxAnswer.Text)== _answer)
+            {
+                MessageBox.Show("Верно");
+            }
+            else
+            {
+                MessageBox.Show("Неверно");
+                GenerateQuestion();
+                TextBoxAnswer.Text = "";
+            }
+
             if (TextBoxLogin.Text == "" ||
                 PasswordBoxPassword.Password == "")
             {
@@ -91,6 +128,11 @@ namespace Karmolin_Fitness_Center_.Pages
         {
 
             LabelTimer.Content = DateTime.Now.Second;
+        }
+
+        private void BlockQuestion_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            GenerateQuestion();
         }
     }
 }
