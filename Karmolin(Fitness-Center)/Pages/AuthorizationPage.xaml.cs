@@ -27,27 +27,32 @@ namespace Karmolin_Fitness_Center_.Pages
         private DateTime _startDate = new DateTime();
         private int _answer;
 
-        private string[] _numders = new string[] { "ноль", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять" };
-        private string[] _operations = new string[] { "плюс", "минус" };
+        private string[] _operations = new string[] { " + ", " - ", " * " };
         public AutarizationPage()
 
         {
             GenerateQuestion();
 
-            var firstNumber = _random.Next(0, 10);
-            var secondNumber = _random.Next(0, 10);
+            var firstNumbeR = _random.Next(0, 10);
+            var secondNumbeR = _random.Next(0, 10);
+            var firstNumber = _random.Next(0, 100);
+            var secondNumber = _random.Next(0, 100);
             var operationIndex = _random.Next(0, _operations.Length);
-            switch(operationIndex)
+            switch (operationIndex)
             {
                 case 0:
+                    BlockQuestion.Text = $"Сколько будет {firstNumber}" + $"{_operations[operationIndex]}{secondNumber}?";
                     _answer = firstNumber + secondNumber;
                     break;
                 case 1:
+                    BlockQuestion.Text = $"Сколько будет {firstNumber}" + $"{_operations[operationIndex]}{secondNumber}?";
                     _answer = firstNumber - secondNumber;
                     break;
+                case 2:
+                    BlockQuestion.Text = $"Сколько будет {firstNumbeR}" + $"{_operations[operationIndex]}{secondNumbeR}?";
+                    _answer = firstNumber * secondNumber;
+                    break;
             }
-            BlockQuestion.Text = $"Сколько будет{_numders[firstNumber]}"+ $"{_operations[operationIndex]}{_numders[secondNumber]}?";
-            _answer = firstNumber + secondNumber;
         }
 
         private void GenerateQuestion()

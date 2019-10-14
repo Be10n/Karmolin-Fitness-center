@@ -27,5 +27,20 @@ namespace Karmolin_Fitness_Center_.Pages
             DgridUsers.ItemsSource = AppData.dataBase.User.ToList();
             
         }
+
+        private void TextBoxSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            UpdateText();
+        }
+
+        private void UpdateText()
+        {
+            var ListServ = AppData.dataBase.User.ToList();
+            if (TextBoxSearch.Text !="")
+            {
+                ListServ = ListServ.Where(p => p.Name.ToLower().Contains(TextBoxSearch.Text.ToLower())).ToList();
+            }
+            DgridUsers.ItemsSource = ListServ;
+        }
     }
 }

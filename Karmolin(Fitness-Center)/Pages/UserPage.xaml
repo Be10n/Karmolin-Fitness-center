@@ -9,7 +9,11 @@
       Title="UserPage">
 
     <Grid>
-        <DataGrid Name="DgridUsers" Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <DataGrid Name="DgridUsers" Margin="5" >
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding IdUser}" Width="auto"></DataGridTextColumn>
                 <DataGridTextColumn Binding="{Binding Login}" Width="auto"></DataGridTextColumn>
@@ -21,8 +25,8 @@
                 <DataGridTextColumn Binding="{Binding Email}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Binding="{Binding DateOfBirth}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Binding="{Binding Role.RoleName}" Width="auto"></DataGridTextColumn>
-                
             </DataGrid.Columns>
         </DataGrid>
+        <TextBox Grid.Row="1" HorizontalAlignment="Center" TextChanged="TextBoxSearch_TextChanged" Name="TextBoxSearch"></TextBox>
     </Grid>
 </Page>
