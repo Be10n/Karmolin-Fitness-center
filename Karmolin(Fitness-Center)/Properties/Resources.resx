@@ -123,6 +123,9 @@
   <data name="ActionAttendance" xml:space="preserve">
     <value>Attendance</value>
   </data>
+  <data name="ActionBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
   <data name="ActionLogin" xml:space="preserve">
     <value>Login</value>
   </data>
@@ -132,20 +135,41 @@
   <data name="ActionSubscription" xml:space="preserve">
     <value>Subscriptions</value>
   </data>
+  <data name="ActionUpdate" xml:space="preserve">
+    <value>Update</value>
+  </data>
   <data name="ActionUser" xml:space="preserve">
     <value>Users</value>
+  </data>
+  <data name="ComboBoxRecord" xml:space="preserve">
+    <value>All the records</value>
+  </data>
+  <data name="MessageCapcha" xml:space="preserve">
+    <value>Incorrect captcha text!</value>
   </data>
   <data name="MessageContent" xml:space="preserve">
     <value>You need to restart application. Do it now?</value>
   </data>
+  <data name="MessageError" xml:space="preserve">
+    <value>Error</value>
+  </data>
   <data name="MessageQuestion" xml:space="preserve">
     <value>Question</value>
+  </data>
+  <data name="MessageSystem" xml:space="preserve">
+    <value>You cannot use this system</value>
+  </data>
+  <data name="MessageUser" xml:space="preserve">
+    <value>User not found!</value>
   </data>
   <data name="TextAdmin" xml:space="preserve">
     <value>Hello Admin!</value>
   </data>
-  <data name="TextAnswer" xml:space="preserve">
-    <value>Answer:</value>
+  <data name="TextCapcha" xml:space="preserve">
+    <value>Enter the text from the captcha</value>
+  </data>
+  <data name="TextChoice" xml:space="preserve">
+    <value>Choose</value>
   </data>
   <data name="TextChooseLanguage" xml:space="preserve">
     <value>Choose the language:</value>
@@ -153,10 +177,28 @@
   <data name="TextCompany" xml:space="preserve">
     <value>Fitness-Center</value>
   </data>
+  <data name="TextInscription" xml:space="preserve">
+    <value>Nothing found</value>
+  </data>
   <data name="TextLogin" xml:space="preserve">
     <value>Login:</value>
   </data>
   <data name="TextPassword" xml:space="preserve">
     <value>Password:</value>
+  </data>
+  <data name="TextSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="TitleAdmin" xml:space="preserve">
+    <value>Admin menu</value>
+  </data>
+  <data name="TitleAuthorization" xml:space="preserve">
+    <value>Authorization</value>
+  </data>
+  <data name="TitleMenu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="TitleUser" xml:space="preserve">
+    <value>Users</value>
   </data>
 </root>

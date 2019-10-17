@@ -123,6 +123,9 @@
   <data name="ActionAttendance" xml:space="preserve">
     <value>Посещения</value>
   </data>
+  <data name="ActionBack" xml:space="preserve">
+    <value>Назад</value>
+  </data>
   <data name="ActionLogin" xml:space="preserve">
     <value>Вход</value>
   </data>
@@ -132,20 +135,41 @@
   <data name="ActionSubscription" xml:space="preserve">
     <value>Абонементы</value>
   </data>
+  <data name="ActionUpdate" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
   <data name="ActionUser" xml:space="preserve">
     <value>Юзеры</value>
+  </data>
+  <data name="ComboBoxRecord" xml:space="preserve">
+    <value>Все записи</value>
+  </data>
+  <data name="MessageCapcha" xml:space="preserve">
+    <value>Неверный текст капчи!</value>
   </data>
   <data name="MessageContent" xml:space="preserve">
     <value>Нужно перезапустить приложение. Сделать это сейчас?</value>
   </data>
+  <data name="MessageError" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
   <data name="MessageQuestion" xml:space="preserve">
     <value>Вопрос</value>
+  </data>
+  <data name="MessageSystem" xml:space="preserve">
+    <value>Вы не можете использовать эту систему</value>
+  </data>
+  <data name="MessageUser" xml:space="preserve">
+    <value>Пользователь не найден!</value>
   </data>
   <data name="TextAdmin" xml:space="preserve">
     <value>Привет админ!</value>
   </data>
-  <data name="TextAnswer" xml:space="preserve">
-    <value>Вопрос:</value>
+  <data name="TextCapcha" xml:space="preserve">
+    <value>Введите текст с капчи</value>
+  </data>
+  <data name="TextChoice" xml:space="preserve">
+    <value>Выберите</value>
   </data>
   <data name="TextChooseLanguage" xml:space="preserve">
     <value>Выберите язык: </value>
@@ -153,10 +177,28 @@
   <data name="TextCompany" xml:space="preserve">
     <value>Фитнес-центр</value>
   </data>
+  <data name="TextInscription" xml:space="preserve">
+    <value>Ничего не найдено</value>
+  </data>
   <data name="TextLogin" xml:space="preserve">
     <value>Логин:</value>
   </data>
   <data name="TextPassword" xml:space="preserve">
     <value>Пароль:</value>
+  </data>
+  <data name="TextSearch" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="TitleAdmin" xml:space="preserve">
+    <value>Меню администратора</value>
+  </data>
+  <data name="TitleAuthorization" xml:space="preserve">
+    <value>Авторизация</value>
+  </data>
+  <data name="TitleMenu" xml:space="preserve">
+    <value>Меню</value>
+  </data>
+  <data name="TitleUser" xml:space="preserve">
+    <value>Пользователи</value>
   </data>
 </root>

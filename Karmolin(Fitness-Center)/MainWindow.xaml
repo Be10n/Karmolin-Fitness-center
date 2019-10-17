@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Karmolin_Fitness_Center_"
         xmlns:props ="clr-namespace:Karmolin_Fitness_Center_.Properties"
         mc:Ignorable="d"
-        Title="Меню" MinHeight="600" MinWidth="800" Icon="Assets/Fitness.ico" >
+        Title="{x:Static props:Resources.TitleMenu}" MinHeight="600" MinWidth="800" Icon="Assets/Fitness.ico" >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="41*"/>
@@ -26,7 +26,7 @@
             <TextBlock Text="" Name="Hedder" Style="{StaticResource CommonBlock}" 
                    Width="Auto" HorizontalAlignment="Center" FontSize="18"></TextBlock>
         </StackPanel>
-        <Button Visibility="Hidden" HorizontalAlignment="Right" Content="Back" Background="Red" Width="100"
+        <Button Visibility="Hidden" HorizontalAlignment="Right" Content="{x:Static props:Resources.ActionBack}" Background="Red" Width="100"
                 x:Name="ButtonBack" Click="ButtonBack_Click" Grid.Column="1" Margin="0,36,5,36"></Button>
         <Frame ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden" Grid.Row="1" Name="MainFrame" Grid.ColumnSpan="2">
 

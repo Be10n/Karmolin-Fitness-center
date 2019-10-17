@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Karmolin_Fitness_Center_.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +26,24 @@ namespace Karmolin_Fitness_Center_.Pages
             InitializeComponent();
             DgridUsers.AutoGenerateColumns = false;
             DgridUsers.ItemsSource = AppData.dataBase.User.ToList();
+            List<User> listSearch = AppData.dataBase.User.ToList();
+            listSearch.Insert(0, new User
+            {
+              Name = Properties.Resources.ComboBoxRecord   
+            });
+            CmbSearch.ItemsSource = listSearch;
+            CmbSearch.SelectedIndex = 0;
             
+        }
+        private void UpdateUsers()
+        {
+             var ListServ = AppData.dataBase.User.ToList();
+            if (CmbSearch.SelectedIndex>0)
+            {
+                ListServ = ListServ.Where(p => p.IdUser == (CmbSearch.SelectedItem as User).IdUser).ToList();
+                
+            }
+            DgridUsers.ItemsSource = ListServ;
         }
 
         private void TextBoxSearch_TextChanged(object sender, TextChangedEventArgs e)
@@ -40,7 +58,21 @@ namespace Karmolin_Fitness_Center_.Pages
             {
                 ListServ = ListServ.Where(p => p.Name.ToLower().Contains(TextBoxSearch.Text.ToLower())).ToList();
             }
-            DgridUsers.ItemsSource = ListServ;
+            if(ListServ.Count == 0)
+            {
+                DgridUsers.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                DgridUsers.Visibility = Visibility.Visible;
+                DgridUsers.ItemsSource = ListServ;
+            }
+            
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            UpdateUsers();
         }
     }
 }

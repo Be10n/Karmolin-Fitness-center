@@ -7,7 +7,7 @@
       xmlns:props ="clr-namespace:Karmolin_Fitness_Center_.Properties"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="AdminMenu">
+      Title="{x:Static props:Resources.TitleAdmin}">
 
     <Grid>
         <Grid.RowDefinitions>

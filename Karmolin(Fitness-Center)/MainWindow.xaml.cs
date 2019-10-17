@@ -20,7 +20,7 @@ namespace Karmolin_Fitness_Center_
     /// </summary>
     public partial class MainWindow : Window
     {
-            bool a;
+        bool a = false;
         public MainWindow()
         {
             if (Properties.Settings.Default.CurrentCulture == "")
@@ -31,7 +31,7 @@ namespace Karmolin_Fitness_Center_
             System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.CurrentCulture);
 
             InitializeComponent();
-            a = false;
+            a = true;
             if (Properties.Settings.Default.CurrentCulture == "ru-Ru")
             {
                 ComboLanguage.SelectedIndex = 0;
@@ -61,7 +61,8 @@ namespace Karmolin_Fitness_Center_
             {
                 ButtonBack.Visibility = Visibility.Visible;
             }
-            Title = Hedder.Text = page.Title;
+            Title = page.Title;
+            Hedder.Text = page.Title; 
         }
 
 
@@ -93,6 +94,7 @@ namespace Karmolin_Fitness_Center_
             {
                 a = true;
             }
+
         }
     }
 }

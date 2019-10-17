@@ -79,6 +79,15 @@ namespace Karmolin_Fitness_Center_.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string ActionBack {
+            get {
+                return ResourceManager.GetString("ActionBack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Login.
         /// </summary>
         public static string ActionLogin {
@@ -106,11 +115,38 @@ namespace Karmolin_Fitness_Center_.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Update.
+        /// </summary>
+        public static string ActionUpdate {
+            get {
+                return ResourceManager.GetString("ActionUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Users.
         /// </summary>
         public static string ActionUser {
             get {
                 return ResourceManager.GetString("ActionUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All the records.
+        /// </summary>
+        public static string ComboBoxRecord {
+            get {
+                return ResourceManager.GetString("ComboBoxRecord", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incorrect captcha text!.
+        /// </summary>
+        public static string MessageCapcha {
+            get {
+                return ResourceManager.GetString("MessageCapcha", resourceCulture);
             }
         }
         
@@ -124,11 +160,38 @@ namespace Karmolin_Fitness_Center_.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string MessageError {
+            get {
+                return ResourceManager.GetString("MessageError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Question.
         /// </summary>
         public static string MessageQuestion {
             get {
                 return ResourceManager.GetString("MessageQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You cannot use this system.
+        /// </summary>
+        public static string MessageSystem {
+            get {
+                return ResourceManager.GetString("MessageSystem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User not found!.
+        /// </summary>
+        public static string MessageUser {
+            get {
+                return ResourceManager.GetString("MessageUser", resourceCulture);
             }
         }
         
@@ -142,11 +205,20 @@ namespace Karmolin_Fitness_Center_.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Answer:.
+        ///   Looks up a localized string similar to Enter the text from the captcha.
         /// </summary>
-        public static string TextAnswer {
+        public static string TextCapcha {
             get {
-                return ResourceManager.GetString("TextAnswer", resourceCulture);
+                return ResourceManager.GetString("TextCapcha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose.
+        /// </summary>
+        public static string TextChoice {
+            get {
+                return ResourceManager.GetString("TextChoice", resourceCulture);
             }
         }
         
@@ -169,6 +241,15 @@ namespace Karmolin_Fitness_Center_.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Nothing found.
+        /// </summary>
+        public static string TextInscription {
+            get {
+                return ResourceManager.GetString("TextInscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Login:.
         /// </summary>
         public static string TextLogin {
@@ -183,6 +264,51 @@ namespace Karmolin_Fitness_Center_.Properties {
         public static string TextPassword {
             get {
                 return ResourceManager.GetString("TextPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string TextSearch {
+            get {
+                return ResourceManager.GetString("TextSearch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Admin menu.
+        /// </summary>
+        public static string TitleAdmin {
+            get {
+                return ResourceManager.GetString("TitleAdmin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Authorization.
+        /// </summary>
+        public static string TitleAuthorization {
+            get {
+                return ResourceManager.GetString("TitleAuthorization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menu.
+        /// </summary>
+        public static string TitleMenu {
+            get {
+                return ResourceManager.GetString("TitleMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Users.
+        /// </summary>
+        public static string TitleUser {
+            get {
+                return ResourceManager.GetString("TitleUser", resourceCulture);
             }
         }
     }

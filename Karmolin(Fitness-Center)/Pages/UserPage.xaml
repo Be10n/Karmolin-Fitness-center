@@ -4,15 +4,17 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Karmolin_Fitness_Center_.Pages"
+      xmlns:props ="clr-namespace:Karmolin_Fitness_Center_.Properties"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="UserPage">
+      Title="{x:Static props:Resources.TitleUser}">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="67*"/>
-            <RowDefinition Height="8*"/>
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource CommonBlock}" Text="{x:Static props:Resources.TextInscription}" Foreground="Red" FontSize="80" Width="auto"></TextBlock>
         <DataGrid Name="DgridUsers" Margin="5" >
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding IdUser}" Width="auto"></DataGridTextColumn>
@@ -27,6 +29,9 @@
                 <DataGridTextColumn Binding="{Binding Role.RoleName}" Width="auto"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBox Grid.Row="1" HorizontalAlignment="Center" TextChanged="TextBoxSearch_TextChanged" Name="TextBoxSearch"></TextBox>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Left" Text="{x:Static props:Resources.TextChoice }" FontSize="20" VerticalAlignment="Center"></TextBlock>
+        <ComboBox Grid.Row="1" Name="CmbSearch" DisplayMemberPath="Name" SelectionChanged="ComboBox_SelectionChanged" HorizontalAlignment="Left" Margin="95,16,0,16"></ComboBox>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" FontSize="20" Text="{x:Static props:Resources.TextSearch}"></TextBlock> 
+        <TextBox Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" TextChanged="TextBoxSearch_TextChanged" Name="TextBoxSearch"></TextBox>
     </Grid>
 </Page>

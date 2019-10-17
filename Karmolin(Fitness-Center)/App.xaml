@@ -45,7 +45,7 @@
             <Setter Property="Margin" Value="5"></Setter>
             <Setter Property="Foreground" Value="{DynamicResource ColorFont}"></Setter>
             <Setter Property="FontSize" Value="14"></Setter>
-            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Background" Value="White"></Setter>
             <Setter Property="AutoGenerateColumns" Value="False"></Setter>
             <Setter Property="CanUserAddRows" Value="False"></Setter>
             <Setter Property="CanUserDeleteRows" Value="False"></Setter>
